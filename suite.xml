@@ -1,0 +1,7 @@
+<suit name="sample">
+    <test name="sample test">
+        <classes>
+            <class name="com.leito.cucumber.TestRunnerWithTestNG"></class>
+        </classes>
+    </test>
+</suit>
