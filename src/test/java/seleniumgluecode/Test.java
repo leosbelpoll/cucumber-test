@@ -1,10 +1,10 @@
-package com.leito.cucumber;
+package seleniumgluecode;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class StepDefinition {
+public class Test {
     @Given("^The browser shows the login page$")
     public void the_browser_shows_the_login_page() throws Throwable {
         System.out.println("Open login page");
