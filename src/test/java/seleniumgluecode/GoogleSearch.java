@@ -9,19 +9,17 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class GoogleSearch {
 
-    private ChromeDriver driver;
+    private ChromeDriver driver = Hooks.getDriver();
 
     @Given("^The browser shows the google page$")
     public void the_browser_shows_the_google_page() throws Throwable {
-        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
-        driver = new ChromeDriver();
-
-        driver.get("https://www.google.com/");
-        driver.manage().window().maximize();
+        String pageTitle = "Google";
+        assertEquals(pageTitle, driver.getTitle());
     }
 
     @When("^The user enters \"([^\"]*)\" into google search bar$")
