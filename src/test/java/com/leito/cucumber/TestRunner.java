@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:login/LoginTest.feature", glue = "com.leito.cucumber")
+@CucumberOptions(features = "classpath:login/LoginTest.feature", glue = "com.leito.cucumber", plugin = "html:target/cucumber-test-report")
 public class TestRunner {
 
 }
