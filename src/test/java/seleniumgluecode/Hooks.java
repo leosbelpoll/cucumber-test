@@ -19,10 +19,14 @@ public class Hooks {
     @After
     public void cleanup(){
         driver.quit();
+
+
     }
 
     public static ChromeDriver getDriver() {
         return driver;
+
+
     }
 
 }
