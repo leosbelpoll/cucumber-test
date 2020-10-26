@@ -3,11 +3,21 @@ package seleniumgluecode;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test {
+
+    private ChromeDriver driver;
+
     @Given("^The browser shows the login page$")
     public void the_browser_shows_the_login_page() throws Throwable {
-        System.out.println("Open login page");
+        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
+        driver = new ChromeDriver();
+
+        driver.get("https://www.google.com/");
+        driver.manage().window().maximize();
+
+
     }
 
     @When("^The user enters username as \"([^\"]*)\" and password as \"([^\"]*)\"$")
