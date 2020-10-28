@@ -40,8 +40,4 @@ public class GoogleSearch {
         assertTrue("There are not results", results.isDisplayed());
     }
 
-    @After
-    public void cleanup() {
-        driver.quit();
-    }
 }
