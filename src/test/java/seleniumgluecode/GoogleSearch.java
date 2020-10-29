@@ -1,6 +1,5 @@
 package seleniumgluecode;
 
-import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -38,10 +37,5 @@ public class GoogleSearch {
     public void the_app_show_several_results() throws Throwable {
         WebElement results = driver.findElement(By.className("g"));
         assertTrue("There are not results", results.isDisplayed());
-    }
-
-    @After
-    public void cleanup() {
-        driver.quit();
     }
 }

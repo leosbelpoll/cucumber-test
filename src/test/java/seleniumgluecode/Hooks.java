@@ -8,15 +8,20 @@ public class Hooks {
 
     private static ChromeDriver driver;
 
-    @Before
+    @Before("@e2e")
     public void setup(){
-        System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
+        if (System.getProperty("os.name").toLowerCase().contains("windows")){
+            System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver_wind.exe");
+        }
+        else {
+            System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
+        }
         driver = new ChromeDriver();
         driver.get("https://www.google.com/");
         driver.manage().window().maximize();
     }
 
-    @After
+    @After("@e2e")
     public void cleanup(){
         driver.quit();
     }

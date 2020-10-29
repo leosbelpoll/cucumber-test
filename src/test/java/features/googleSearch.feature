@@ -1,3 +1,4 @@
+@e2e
 Feature: Google search
   User should be able to search on google
 
