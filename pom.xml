@@ -23,26 +23,6 @@
         </dependency>
 
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <version>1.0.5</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
             <groupId>com.vimalselvam</groupId>
             <artifactId>cucumber-extentsreport</artifactId>
             <version>3.1.1</version>
@@ -52,6 +32,20 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>3.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.8.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>6.8.1</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
