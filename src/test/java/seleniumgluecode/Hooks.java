@@ -17,7 +17,7 @@ public class Hooks {
             System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
         }
         driver = new ChromeDriver();
-        driver.get("https://www.google.com/");
+        driver.get("http://172.23.254.17:8080/SIMINAC16_AUT/servlet/simlogin");
         driver.manage().window().maximize();
     }
 

@@ -1,11 +1,9 @@
 package seleniumgluecode;
 
 import com.leito.calc.Calc;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import org.junit.Rule;
-import org.junit.Test;
-import org.junit.rules.ExpectedException;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
